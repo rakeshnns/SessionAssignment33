@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	/* Applied to whole Document */
+	*{
+		margin: 0;
+	}
+	/* Entire menu block styleing bloc */
+		div{
+			overflow: hidden;     /*If each menu bar size is going beyond limit this will make in divs control */
+            background-color: #5f5e5e;
+		}
+		/*Menu bar style blpck*/
+		a{
+			float: left;
+			color: white;
+			text-decoration: none;
+			padding: 20px 20px;
+			font-size: 16px;
+		}
+		/* Drop down Hover controller */
+		 a:hover{
+		 	background-color: black;
+		 }
+
+		 .Dropdown{
+		     float: left;   /* Helps in align the entire menu bar in one line otherwise contact tab comes in next line*/
+            }
+          .Droplist{
+          	display: none; /*This remove the Drop list from the view port */
+            background-color: #a9a5a5;
+            position: absolute; /*This shows in the list as each items in perticular blocks instead of complete menu in one block */
+          } 
+
+         /* Code to take care of list appearence */ 
+          .Droplist a{
+          	float: none; /* Statement make list to align vertically*/
+            display: block;
+            color: white;
+            border: 1px solid black;
+          }
+          /* This part allows the list to be visible on vering on Deropdown class */
+           .Dropdown:hover .Droplist{
+            display: block;
+          }    
+          
+
+	</style>
+</head>
+<body>
+ <!-- Menu bar Structure Start -->
+ <div>
+ 	
+ 	<a href="#">Home</a>
+ 	<!-- Drop down structure Start -->
+ 	 <div class="Dropdown">
+ 	 	<div class="Dropblock"><a href="#">Courses</a></div>
+ 	 	 <div class="Droplist">
+           <a href="#">HTML5</a>
+           <a href="#">CSS</a>
+           <a href="#">JAVASCRIPT</a>
+         </div>  
+ 	 </div>
+ 	<!-- Drop down structure End -->
+ 	<a href="#">Contacts</a>
+ 	
+ </div>
+ <!-- Menu bar structure End-->
+ <HEADER>
+ 	Sample text to check whether text in Header section is getting overlapped or not.<br>
+ 	Sample text to check whether text in Header section is getting overlapped or not.<br>
+ 	Sample text to check whether text in Header section is getting overlapped or not.<br>
+ 	Sample text to check whether text in Header section is getting overlapped or not.<br>
+ </HEADER>
+
+</body>
+</html>
